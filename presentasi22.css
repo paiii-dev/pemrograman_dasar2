@@ -1,0 +1,182 @@
+/* Pengaturan dasar halaman */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6fb;
+    color: #263247;
+    line-height: 1.6;
+}
+
+/* Judul website */
+header {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #5146d8;
+    color: white;
+}
+
+header h1 {
+    margin: 0 0 8px;
+    font-size: 32px;
+}
+
+header p {
+    margin: 0;
+    color: #e9e7ff;
+}
+
+/* Menu navigasi */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 14px;
+    background-color: white;
+    border-bottom: 1px solid #e1e5ee;
+}
+
+nav a {
+    padding: 8px 12px;
+    color: #5146d8;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+nav a:hover {
+    background-color: #eeedff;
+}
+
+/* Konten utama */
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+section {
+    margin-bottom: 22px;
+    padding: 25px;
+    background-color: white;
+    border: 1px solid #e4e8f0;
+    border-radius: 12px;
+}
+
+section h2 {
+    margin-top: 0;
+    color: #5146d8;
+    font-size: 24px;
+}
+
+section h3 {
+    margin-top: 0;
+    color: #263247;
+}
+
+/* Kotak contoh */
+.contoh {
+    margin-top: 20px;
+    padding: 18px;
+    background-color: #f0efff;
+    border-left: 4px solid #5146d8;
+    border-radius: 6px;
+}
+
+.contoh h3 {
+    margin-bottom: 6px;
+}
+
+/* Kartu alasan penggunaan */
+.kartu-container {
+    display: flex;
+    gap: 15px;
+}
+
+.kartu {
+    flex: 1;
+    padding: 18px;
+    background-color: #f7f8fc;
+    border: 1px solid #e4e8f0;
+    border-radius: 8px;
+}
+
+.kartu h3 {
+    font-size: 17px;
+}
+
+.kartu p {
+    font-size: 14px;
+}
+
+/* Daftar kelebihan dan kekurangan */
+ul {
+    padding-left: 22px;
+}
+
+li {
+    margin-bottom: 9px;
+}
+
+.kelebihan li::marker {
+    color: #239765;
+}
+
+.kekurangan li::marker {
+    color: #d87932;
+}
+
+/* Kotak kesimpulan */
+.kesimpulan {
+    background-color: #eeedff;
+    border-color: #d9d6ff;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #263247;
+    color: white;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Tampilan layar kecil */
+@media (max-width: 650px) {
+    header h1 {
+        font-size: 26px;
+    }
+
+    main {
+        width: 92%;
+        margin-top: 20px;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    .kartu-container {
+        flex-direction: column;
+    }
+
+    nav {
+        gap: 4px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+}
