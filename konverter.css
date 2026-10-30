@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333333;
+    height: 1.6;
+    padding: 27px;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+header {
+    text-align: center;
+    border-bottom: 2px solid #eef2f3;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: light;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+nav ul li a {
+    cursor: pointer;
+}
+
+h1 {
+    color: #2c3e50;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+h4 {
+    color: #34495e;
+    font-size: 1.4rem;
+    margin: 35px 0 15px 0;
+    border-left: 4px solid #2c3e50;
+    padding-left: 10px;
+}
+
+.banner-img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+li strong {
+    color: #2c3e50;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.95rem;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+th {
+    background-color: #f4f6f7;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+tr:hover {
+    background-color: #f9fbfd;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #eef2f3;
+    font-size: 0.85rem;
+    color: #7f8c8d;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    h4 {
+        font-size: 1.1rem;
+        margin: 25px 0 10px 0;
+    }
+
+    .banner-img {
+        max-height: 200px;
+    }
+
+    table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    
+    th, td {
+        padding: 10px 12px;
+    }
+}
